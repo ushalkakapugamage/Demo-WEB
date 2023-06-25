@@ -1,4 +1,3 @@
-!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,45 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ICET Demo</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 
 <body>
-
-    <!--This is nav bar-->
-    <div>
-        <h1>Hello ICET</h1>
-        <h2>Hello ICET</h2>
-        <h3>Hello ICET</h3>
-        <h4>Hello ICET</h4>
-        <h5>Hello ICET</h5>
-        <h6>Hello ICET</h6>
+    <div class="navi">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
     </div>
-
-    <!--main content-->
-    <div>
-        <p>Text fields allow users to enter text into a UI. They typically appear in forms and dialogs.</p>
-
-        <button>Click US</button>
-        <input type="password">
-
-        <label for="male">Male</label>
-        <input type="radio" name="" id="male">
-
-        <label for="female">Female</label>
-        <input type="radio" name="" id="female">
-
-        <img src="assets/a.png" alt="this is a baby" width="20px">
-        <audio src="assets/file_example_MP3_700KB.mp3" controls></audio>
-        <video src="" controls></video>
-
-        <a href="https://docs.python.org/3/tutorial/">Go to python</a>
-
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63397.333699821735!2d79.89441627694708!3d6.729120196223118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae24616c169e7c3%3A0xd21e80c970651d56!2sPanadura!5e0!3m2!1sen!2slk!4v1680951005127!5m2!1sen!2slk"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+    <!--This is nav bar-->
         <br><br>
         <input type="text" placeholder="Enter your name"
             style="border: 2px solid green; border-radius: 100px; padding: 7px;">
@@ -68,54 +73,73 @@
         </ol>
     </div>
 
-    <div>
-        <ul style="list-style: none;">
-            <li><a href="Welcome page.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </div>
-
-    <div class="box">
-
-    </div>
-
-    <br>
-
-    <button class="btn">Mawa Click
-        Karanna</button>
-
-    <div id="div1">
-
-    </div>
-
-    <div class="box">
-
-    </div>
-    <div>
-        <h1>HELLO ICET </h1>
-        <a href="https://www.youtube.com/">go to youtube</a>
-        <input type="checkbox" >
-        <input type="text" placeholder="enter username"> 
-        <h1>hi</h1>
-        <input type="radio" > 
-        <input type="radio" > 
-        <input type="file" > 
-        <input type="email" > 
-        <input type="date" > 
-        <input type="button">
-        <input type="color">
-        <img src="assets/download.jpg" alt="this is a picture">
-        <audio src="assets/Lovely - Billie Eilish ft. Khalid - Fingerstyle Guitar Cover.mp3" controls></audio>
-        <video src="" controls></video>
-        <div>
-     
+    
+    <div class="main">
+        <div class="card" style="width: 18rem;">
+            <img src="assets/1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="assets/2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="assets/3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="assets/4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
         </div>
-        <input type="">
-    </div>
+
+      <div style="margin-top: 20px;">
+        <input id="Email" type="email" placeholder="enter your email address"></input>
+        <button onclick="printdata()" type="button" class="btn-outline-danger">SUBMIT</button>
+      </div><br><br><br><br>
+      
+
+      <table class="m" border="1px">
+        <tr><td>&nbsp;</td></tr>
+        <tr><td>&nbsp</td><td>Enter Username</td><td></td><td></td><td> <input id="text1" type="text"></td><td>  &nbsp;&nbsp;</td></tr>
+        <tr><td>&nbsp</td><td>Enter password</td><td></td><td></td><td> <input id="text2" type="text"></td><td> &nbsp </td></tr>
+        <tr><td>&nbsp;</td></tr>
+        <tr aria-colspan="2"><td></td><td></td><td><button class="b" onclick="submit()" type="button">login</button></td> &nbsp; <td></td></tr>
+        <tr><td>&nbsp;</td></tr>
+      </table><br><br><br>
+
+      Input month <input id="text" type="text">
+      <button onclick="find()" type="button">Find</button>
+      <br><br>
+      
+      <div>
+         Enter name<input type="text" id="capital">
+         <button type="button" onclick="Capital()">Find</button>
+
+      </div>
 
 
 
+
+
+      
+      <br><br><br>
+<script src="js/main.js"></script>
 </body>
 </html>
